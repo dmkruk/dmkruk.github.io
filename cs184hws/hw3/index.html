@@ -39,8 +39,25 @@
 		We've already added one heading per part, to make your write-up as navigable when grading. Please fit your write-up within these sections!
 		-->
 
+
 		<h2>Overview</h2>
-		Give a high-level overview of what you implemented in this homework. Think about what you've built as a whole. Share your thoughts on what interesting things you've learned from completing the homework.
+
+<p>In this assignment, I built a physically-based renderer using path tracing that simulates light transport through a scene. 
+	The implementation progressed through several key components:</p>
+
+<ol>
+<li>Ray-scene intersection with BVH acceleration</li>
+<li>Direct lighting using both hemisphere and importance sampling</li>
+<li>Global illumination with recursive ray tracing and proper light accumulation</li>
+<li>Russian Roulette path termination for efficiency</li>
+<li>Adaptive sampling to concentrate computation on complex image regions</li>
+</ol>
+
+<h2>What I Learned</h2>
+
+<p>This project gave me a deeper understanding of physically-based rendering principles. 
+	I was struck by how the relatively simple concept of tracing light paths produces such realistic results. 
+	The implementation revealed the power of Monte Carlo methods in computer graphics, especially through variance reduction techniques.</p>
 
 		<h2>Part 1: Ray Generation and Scene Intersection</h2>
 		In our implementation, we first generate camera rays that originate from the camera position and pass through the virtual camera sensor.
